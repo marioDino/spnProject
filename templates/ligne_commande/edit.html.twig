@@ -1,13 +1,13 @@
 {% extends 'base.html.twig' %}
 
-{% block title %}Edit LigneCommande{% endblock %}
+{% block title %}Editer Ligne de Commande{% endblock %}
 
 {% block body %}
     <h1>Edit LigneCommande</h1>
 
-    {{ include('ligne_commande/_form.html.twig', {'button_label': 'Update'}) }}
+    {{ include('ligne_commande/_form.html.twig', {'button_label': 'Editer'}) }}
 
-    <a href="{{ path('ligne_commande_index') }}">back to list</a>
+    <a href="{{ path('ligne_commande_index') }}">Retour à la liste</a>
 
     {{ include('ligne_commande/_delete_form.html.twig') }}
 {% endblock %}
