@@ -78,6 +78,7 @@ class CategorieController extends AbstractController
         ]);
     }
 
+
     /**
      * @Route("/{id}", name="categorie_delete", methods={"DELETE"})
      */
@@ -91,4 +92,5 @@ class CategorieController extends AbstractController
 
         return $this->redirectToRoute('categorie_index');
     }
+
 }

@@ -91,4 +91,17 @@ class ClientController extends AbstractController
 
         return $this->redirectToRoute('client_index');
     }
+
+
+    /**
+     * @Route("/{id}", name="client_show_one", methods={"GET"})
+     */
+    public function showOneClient(Client $client): Response
+    {
+        return $this->render('client/show.html.twig', [
+            'id' => $client->id,
+        ]);
+    }
+
+
 }

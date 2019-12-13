@@ -53,10 +53,22 @@ class Categorie
     /**
      * @return Collection|Produit[]
      */
+
+    //Methode qui permet de retourner Tous le Produit
+
     public function getProduits(): Collection
     {
         return $this->produits;
     }
+
+    //Methode qui permet de retourner un Produit
+    public function getOneProduit(Produit $produit): self
+    {
+        return $this->produits[] = $produit;
+    }
+
+
+    //Methode qui utiliser pour l'ajout d'un article
 
     public function addProduit(Produit $produit): self
     {
@@ -67,6 +79,9 @@ class Categorie
 
         return $this;
     }
+
+
+    //Methode qui permet de supprimer un produit
 
     public function removeProduit(Produit $produit): self
     {
